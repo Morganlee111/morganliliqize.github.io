@@ -1,0 +1,305 @@
+/* Below is index css */
+
+/* Set the body background color to black*/
+#my-body1 {
+    background-color: black;
+}
+
+/* set the header background color and 
+add 10px padding, hide all overflow the header*/
+header {
+    background-color: black; /* 深蓝色背景 */
+    padding: 10px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+/* set the navigation bar to right and hide content overflow*/
+nav {
+    float: right;
+    overflow: auto;
+}
+
+/* set the h1 display, and other contents can display in one line,
+eliminate all default space*/
+header h1 {
+    display: inline-block;
+    margin: 0;
+    color: white; /* 白色文字 */
+  text-decoration: none;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 修改 section 的背景颜色 */
+section {
+    background-color: white; /* 浅灰色背景 */
+    padding: 20px;
+}
+
+/* 设置 section 内 p 标签的样式 */
+section p {
+    color: #333; /* 深色文字 */
+    font-size: 16px; /* 字体大小 */
+    line-height: 1.6; /* 行间距 */
+}
+
+/* remove bullet points, delete all default spacing, hide overflow content*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* set the navigation bar content to left float*/
+li {
+    float: left;
+}
+
+/* bold text, white text color, 14px padding to top and bottom
+16px padding to left and right, present in one line, delete text underlining*/
+li a {
+    font-weight: bold;
+    color: white;
+    padding: 14px 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* set the active anchor element background color to green*/
+li>a.active {
+    background-color: green;
+}
+
+/* set the hover over navigation bar color*/
+li>a:hover:not(a.active),
+.dropbtn:hover {
+    background-color: #555;
+}
+
+/* set the dropdown content absolutely position, padding and margin to 0
+background color, min-width, add the box shadow and hide the dropdown content*/
+.dropdown-content {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    display: none;
+    border-radius: 10px;
+}
+
+/* set the input content background color, set the display as block,
+remove all floating*/
+.dropdown-content a {
+    color: black;
+    display: block;
+    float: none;
+    border-radius: 10px;
+}
+
+/* when the user uses hover over the dropdown content, set the background
+color and text color*/
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: deepskyblue;
+}
+
+/* dropdown content can be viewed by user when they use hover over the 
+title*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* set the text at the bottom of the image, and set text position, size,
+weight, color*/
+.caption1 {
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* set the p font*/
+#my-sec1 p {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    z-index: 1000;
+    background-color: black;
+    height: 60px; /* 设置footer的高度 */
+    box-sizing: border-box; /* 确保padding包含在高度内 */
+}
+
+.footer-left, .footer-right {
+    margin: 0 20px; /* 为左右两侧添加边距 */
+    z-index: 10;
+}
+
+.footer-center {
+    flex-grow: 1; /* 允许中间部分根据需要扩展 */
+    text-align: center;
+    z-index: 10;
+    margin-right: 150px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    margin-right: 165px; /* 为右侧添加额外的边距 */
+    background-color: black;
+}
+
+.footer-right a {
+    margin-left: 10px;
+    z-index: 10;
+}
+
+.footer-right img {
+    height: 1em; /* 设置图标的高度与当前字体大小相同 */
+    width: auto; /* 保持图像的宽高比 */
+}
+
+.home-photo {
+    z-index: auto; /* 或设置为更高的正值，根据需要调整 */
+    position: relative; /* 如果您需要使用 z-index，确保设置了 position 属性 */
+    height: 500px;
+    width: 400px;
+    margin-right: 200px;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between; /* 在两侧内容之间添加空间 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.text-side {
+    flex: 1; /* 使文本占据可用空间 */
+    text-align: left; /* 文本左对齐 */
+    margin-left: 200px;
+}
+
+.image-side {
+    flex: 1; /* 使图片占据可用空间，确保文本和图片平分空间 */
+    text-align: right; /* 使图片在其容器内右对齐 */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative; /* 添加定位 */
+    z-index: 999; /* 高于页面上大部分元素的 z-index */
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.social-icons a img {
+    width: 40px; /* 设置图标的宽度 */
+    height: 40px; /* 设置图标的高度，保持图标为正方形 */
+    background-color: black; /* 或其他需要的背景色 */
+    position: relative;
+    z-index: 1;
+}
+
+.social-icons a {
+    margin: 0 20px; /* 每个图标左右边距设置为10px，共计20px间距 */
+    display: inline-flex; /* 确保可以应用边距 */
+}
+
+.home-about-social {
+    text-align: center; /* 这将使得其中的文本居中 */
+}
+
+.intro-heading {
+    text-align: center;
+}
+
+.home-about-body {
+    text-align: center;
+}
+
+.social-icons a img {
+    border: none; /* 移除边框 */
+    background-color: white; /* 设置背景色与页面背景色相同 */
+}
+
+#Projects {
+    text-align: center; /* 居中 section 内的所有内容 */
+    color: white; /* 假设您希望文字是白色 */
+    padding: 20px; /* 根据需要添加内边距 */
+}
+
+#Projects h2 {
+    color: black; /* 设置文本颜色，确保它在黑色背景上可见 */
+    margin: 10px 0; /* 为标题和段落添加上下边距 */
+    margin-top: 100px;
+}
+
+#Projects p {
+    color: black; /* 设置文本颜色，确保它在黑色背景上可见 */
+    margin: 10px 0; /* 为标题和段落添加上下边距 */
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.project {
+    border: 2px solid black;
+    padding: 20px;
+    width: calc(33.33% - 40px);
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* 鼠标悬停时上移10px */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+}
+
+.project img {
+    max-width: 100%; /* 限制图片的最大宽度，确保它不会超出其容器 */
+    height: auto; /* 保持图片的原始宽高比 */
+    display: block; /* 新增行，确保图片块级显示 */
+    margin: 0 auto; /* 居中图片 */
+    z-index: 999;
+}
+
+img {
+    position: relative;
+}
