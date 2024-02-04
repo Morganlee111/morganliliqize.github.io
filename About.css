@@ -1,0 +1,382 @@
+/* Below is index css */
+
+/* Set the body background color to black*/
+#my-body1 {
+    background-color: black;
+}
+
+/* set the header background color and 
+add 10px padding, hide all overflow the header*/
+header {
+    background-color: black; /* 深蓝色背景 */
+    padding: 10px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+/* set the navigation bar to right and hide content overflow*/
+nav {
+    float: right;
+    overflow: auto;
+}
+
+/* set the h1 display, and other contents can display in one line,
+eliminate all default space*/
+header h1 {
+    display: inline-block;
+    margin: 0;
+    color: white; /* 白色文字 */
+  text-decoration: none;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 修改 section 的背景颜色 */
+section {
+    background-color: white; /* 浅灰色背景 */
+    padding: 20px;
+}
+
+/* 设置 section 内 p 标签的样式 */
+section p {
+    color: #333; /* 深色文字 */
+    font-size: 16px; /* 字体大小 */
+    line-height: 1.6; /* 行间距 */
+}
+
+/* remove bullet points, delete all default spacing, hide overflow content*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* set the navigation bar content to left float*/
+li {
+    float: left;
+}
+
+/* bold text, white text color, 14px padding to top and bottom
+16px padding to left and right, present in one line, delete text underlining*/
+li a {
+    font-weight: bold;
+    color: white;
+    padding: 14px 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* set the active anchor element background color to green*/
+li>a.active {
+    background-color: green;
+}
+
+/* set the hover over navigation bar color*/
+li>a:hover:not(a.active),
+.dropbtn:hover {
+    background-color: #555;
+}
+
+/* set the dropdown content absolutely position, padding and margin to 0
+background color, min-width, add the box shadow and hide the dropdown content*/
+.dropdown-content {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    display: none;
+    border-radius: 10px;
+}
+
+/* set the input content background color, set the display as block,
+remove all floating*/
+.dropdown-content a {
+    color: black;
+    display: block;
+    float: none;
+    border-radius: 10px;
+}
+
+/* when the user uses hover over the dropdown content, set the background
+color and text color*/
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: deepskyblue;
+}
+
+/* dropdown content can be viewed by user when they use hover over the 
+title*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* set the text at the bottom of the image, and set text position, size,
+weight, color*/
+.caption1 {
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* set the p font*/
+#my-sec1 p {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 60px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.footer-left, .footer-right {
+    margin: 0 20px; /* 为左右两侧添加边距 */
+    z-index: 10;
+}
+
+.footer-center {
+    flex-grow: 1; /* 允许中间部分根据需要扩展 */
+    text-align: center;
+    z-index: 10;
+    margin-right: 150px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    margin-right: 150px; /* 为右侧添加额外的边距 */
+    background-color: black;
+}
+
+.footer-right a {
+    margin-left: 10px;
+    z-index: 10;
+}
+
+.footer-right img {
+    height: 1em; /* 设置图标的高度与当前字体大小相同 */
+    width: auto; /* 保持图像的宽高比 */
+}
+
+.home-photo {
+    z-index: auto; /* 或设置为更高的正值，根据需要调整 */
+    position: relative; /* 如果您需要使用 z-index，确保设置了 position 属性 */
+    height: 500px;
+    width: 400px;
+    margin-right: 200px;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between; /* 在两侧内容之间添加空间 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.text-side {
+    flex: 1; /* 使文本占据可用空间 */
+    text-align: left; /* 文本左对齐 */
+    margin-left: 200px;
+}
+
+.image-side {
+    flex: 1; /* 使图片占据可用空间，确保文本和图片平分空间 */
+    text-align: right; /* 使图片在其容器内右对齐 */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative; /* 添加定位 */
+    z-index: 999; /* 高于页面上大部分元素的 z-index */
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.social-icons a img {
+    width: 40px; /* 设置图标的宽度 */
+    height: 40px; /* 设置图标的高度，保持图标为正方形 */
+    background-color: black; /* 或其他需要的背景色 */
+    position: relative;
+    z-index: 1;
+}
+
+.social-icons a {
+    margin: 0 20px; /* 每个图标左右边距设置为10px，共计20px间距 */
+    display: inline-flex; /* 确保可以应用边距 */
+}
+
+.home-about-social {
+    text-align: center; /* 这将使得其中的文本居中 */
+}
+
+.intro-heading {
+    text-align: center;
+}
+
+.home-about-body {
+    text-align: center;
+}
+
+.social-icons a img {
+    border: none; /* 移除边框 */
+    background-color: white; /* 设置背景色与页面背景色相同 */
+}
+
+.resume-container {
+    text-align: center; /* 居中容器内的内容 */
+    padding: 20px; /* 添加一些内边距 */
+}
+
+.resume-image {
+    max-width: 100%; /* 控制图片最大宽度，保持响应式 */
+    height: auto; /* 保持图片的原始宽高比 */
+    /* 可以添加具体的宽度或高度来调整图片大小 */
+    width: 500px; /* 示例宽度，根据需要调整 */
+    margin-top: 20px; /* 在按钮和图片之间添加一些间距 */
+}
+
+.download-cv-btn {
+    display: inline-block; /* 使按钮内联显示，便于居中 */
+    padding: 10px 20px; /* 按钮内边距 */
+    background-color: #007bff; /* 按钮背景颜色，例如Bootstrap蓝色 */
+    color: white; /* 文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+    font-weight: bold; /* 加粗字体 */
+    border-radius: 5px; /* 按钮圆角 */
+    margin-bottom: 20px; /* 与图片间的距离 */
+}
+
+.download-cv-btn:hover {
+    background-color: #0056b3; /* 鼠标悬浮时的背景颜色 */
+}
+
+#Resume img {
+    z-index: 999;
+}
+
+.download-cv-btn1 {
+    display: inline-block; /* 使按钮内联显示，便于居中 */
+    padding: 10px 20px; /* 按钮内边距 */
+    background-color: #007bff; /* 按钮背景颜色，例如Bootstrap蓝色 */
+    color: white; /* 文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+    font-weight: bold; /* 加粗字体 */
+    border-radius: 5px; /* 按钮圆角 */
+    margin-bottom: 20px; /* 与图片间的距离 */
+    margin-bottom: 100px;
+}
+
+.download-cv-btn1:hover {
+    background-color: #0056b3; /* 鼠标悬浮时的背景颜色 */
+}
+
+.about-container h2 {
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-image img {
+    width: 300px; /* 根据实际需要调整 */
+    height: auto;
+    margin-right: 20px;
+    z-index: 999;
+}
+
+.about-text {
+    color: black;
+    max-width: 60%; /* 根据实际需要调整 */
+    margin-right: 20px; /* 添加右边距以与图片保持间隔 */
+}
+
+.about-text h3, .about-text p, .about-text ul {
+    margin-bottom: 10px;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#About h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* 标题样式 */
+#About h3 {
+    text-align: center; /* 居中标题 */
+    font-weight: bold; /* 加粗文本 */
+    margin-top: 20px; /* 与上方内容的间距 */
+    margin-bottom: 20px; /* 与下方内容的间距 */
+    color: black;
+    font-size: 40px;
+}
+
+/* 图片容器样式 */
+.skillset-images {
+    display: flex;
+    flex-wrap: wrap; /* 允许内容换行 */
+    justify-content: space-between; /* 两端对齐，确保间距均匀 */
+    margin: 0 auto; /* 居中容器 */
+    max-width: 1200px; /* 或根据实际需求调整 */
+    padding: 0 20px; /* 容器内侧边距，为最左侧和最右侧的图片提供空间 */
+}
+
+/* 图片样式 */
+.skillset-images img {
+    width: calc(20% - 10px); /* 每张图片占行宽的20%，减去间隙 */
+    margin-bottom: 100px; /* 图片间的垂直间距 */
+    z-index: 999;
+}
+
+/* 响应式布局调整（可选） */
+@media (max-width: 768px) {
+    .skillset-images img {
+        width: calc(50% - 10px); /* 在较小屏幕上每行显示两张图片 */
+    }
+}
