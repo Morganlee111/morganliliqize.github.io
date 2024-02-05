@@ -178,7 +178,7 @@ footer {
 
 .footer-right a {
     margin-left: 10px;
-    z-index: 10;
+    z-index: 1001;
 }
 
 .footer-right img {
